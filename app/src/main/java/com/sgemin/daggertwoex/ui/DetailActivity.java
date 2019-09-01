@@ -36,7 +36,7 @@ public class DetailActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView);
         String url = getIntent().getStringExtra("url");
 
-        ApplicationComponent applicationComponent = MyApplication.get(this).getApplicationComponent();
+        ApplicationComponent applicationComponent = MyApplication.Companion.get(this).getApplicationComponent();
         detailActivityComponent = DaggerDetailActivityComponent.builder()
                 .applicationComponent(applicationComponent)
                 .build();

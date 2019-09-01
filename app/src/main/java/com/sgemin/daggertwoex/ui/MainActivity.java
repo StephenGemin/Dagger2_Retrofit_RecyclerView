@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
-        ApplicationComponent applicationComponent = MyApplication.get(this).getApplicationComponent();
+        ApplicationComponent applicationComponent = MyApplication.Companion.get(this).getApplicationComponent();
         mainActivityComponent = DaggerMainActivityComponent.builder()
                 .mainActivityContextModule(new MainActivityContextModule(this))
                 .applicationComponent(applicationComponent)
