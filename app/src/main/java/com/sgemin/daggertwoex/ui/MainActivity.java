@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
             @Override
             public void onResponse(@NotNull Call<StarWars> call, @NotNull Response<StarWars> response) {
                 assert response.body() != null;
-                populateRecyclerView(response.body().results);
+                populateRecyclerView(response.body().getResults());
             }
 
             @Override
