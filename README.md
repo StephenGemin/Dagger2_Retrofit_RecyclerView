@@ -16,11 +16,11 @@ Now I say that it's written in Kotlin, but in truth, there is a mix of Kotlin an
 ![Inject_Application_Context_mContext](https://github.com/StephenGemin/Dagger2_Retrofit_RecyclerView/blob/master/readmepics/chrome_f0NwSDqseT.png)
 
 The most essential things to remember when working with Dagger2 dependency injection
-* @Module -- used on the class which will provide dependencies
-  ** @Provides -- used on the class methods of the class that has the @Module
+* @Module -- used on the class which will provide dependencies.
+  * @Provides -- used on the class methods of the class that has the @Module
 * @Inject -- Used to request dependencies
 * @Component -- This is where the magic happens.  This is called on an Interface (at least from my reading).  It is where the provided dependencies in @Module/@Provides are put into the places requesting the dependencies @Inject.  Within the @Component annotation you can call keywords like (1) modules, (2) includes, (2) dependencies, etc.
-  ** modules --  tells Dagger2 which modules are providing the dependencies
-  ** dependencies -- Use if you are depending on another component 
-  ** includes -- I don't fully understand this, but I think you use this when one module uses another module, but doesn't depend on it.  Confusing, but I'm not how else to explain it ☺.
-  * @Singleton -- think of this as a global scoped item.  Nothing can be above @Singleton scope.  It's used when you are using a class/method throughout your entire app.  
+  * modules --  tells Dagger2 which modules are providing the dependencies
+  * dependencies -- Use if you are depending on another component 
+  * includes -- I don't fully understand this, but I think you use this when one module uses another module, but doesn't depend on it.  Confusing, but I'm not how else to explain it ☺.  There is only one case in the article that uses the includes.
+* @Singleton -- think of this as a global scoped item.  Nothing can be above @Singleton scope.  It's used when you are using a class/method throughout your entire app.  
