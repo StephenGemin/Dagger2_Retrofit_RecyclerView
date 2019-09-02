@@ -1,20 +1,24 @@
-# Dagger2_Retrofit_RecyclerView
-Dagger2 Dependency Injection with Retrofit and RecyclerView with Kotlin
+# Dagger2 Dependency Injection with Retrofit and RecyclerView with Kotlin
 
+![Intro Picture](https://github.com/StephenGemin/Dagger2_Retrofit_RecyclerView/blob/master/readmepics/DependencyInjection.jpeg)
+
+## Brief Introduction
 If you are like me, I transitioned from another background into software programming. I've found dependency injection particiularly 
 difficult to wrap my head around.  I've gone through at least 10-15 websites explaining this concept, but it was this article that really 
 hit it home for me.  I went through and re-wrote the code step by step.  
 
+## Useful Sources
 For anyone who reads this, I've re-written the code from this website.
 * [Android Dagger 2 + Retrofit + RecyclerView](https://www.journaldev.com/20405/android-dagger-2-retrofit-recyclerview#ui-package)
 
 Before even reading through the code, watch this youtube video from Jake Wharton on Dagger2. It's absolutely jam packed with useful information and I had to watch this a few times. 
 * [The Future of Dependency Injection with Dagger 2](https://www.youtube.com/watch?v=plK0zyRLIP8)
 
-
+## About this Repo
 Now I say that it's written in Kotlin, but in truth, there is a mix of Kotlin and Java Files.  I had a lot of trouble injecting the ApplicationContext into the MainActivity and DetailActivity.  The only way I was able to stop the Dagger2 error during compiling was to copy and past the Java code from the website. (see picture below).  
 ![Inject_Application_Context_mContext](https://github.com/StephenGemin/Dagger2_Retrofit_RecyclerView/blob/master/readmepics/chrome_f0NwSDqseT.png)
 
+## My brief take on DI so far ...
 The most essential things to remember when working with Dagger2 dependency injection
 * @Module -- used on the class which will provide dependencies.
   * @Provides -- used on the class methods of the class that has the @Module
