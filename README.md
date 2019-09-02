@@ -1,4 +1,4 @@
-# Dagger2 Dependency Injection with Retrofit and RecyclerView with Kotlin
+# Dagger2 Dependency Injection with Retrofit/RecyclerView using Kotlin
 
 ![Intro Picture](https://github.com/StephenGemin/Dagger2_Retrofit_RecyclerView/blob/master/readmepics/DependencyInjection.jpeg)
 
